@@ -1,0 +1,15 @@
+body {
+    margin: 0px;
+    background-color: #E9F8E5;
+  }
+.main-card{
+  max-Width: 1000px; 
+  padding: 20px 5px; 
+  margin: 0 auto;
+}
+
+.form-card{
+  max-Width: 1000px; 
+  padding: 20px 5px; 
+  margin: 0px auto;
+}

@@ -1,0 +1,24 @@
+.nav{
+    display:flex;
+    justify-Content:space-around;
+}
+
+.firstStatus{
+    margin-Top:0;
+}
+
+.secondStatus-Button{
+    width:100%; 
+    display:flex; 
+    justify-Content:flex-end;
+}
+.status{
+    margin-Top:0;
+}
+
+.thirdStatus-Button{
+    width:100%;
+    display:flex; 
+    justify-Content:flex-end;
+
+}

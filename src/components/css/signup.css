@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    background-color: #E9F8E5;
+  }
+
+ .main-card{
+    max-Width: 600px; 
+    padding: 20px 5px; 
+    margin: 0px auto;
+}

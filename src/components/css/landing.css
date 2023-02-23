@@ -1,0 +1,22 @@
+.main-title{
+    margin-Left:2rem;
+    color:#59D436;
+    letter-Spacing:0.2rem; 
+    font-Size:5rem;
+    font-Weight:600px;
+}
+
+.main-grid{
+    min-Height: 100vh; 
+}
+.login-forgotPassword{
+    margin-Top:0;
+    margin-Bottom:0; 
+    color:#59D436;
+}
+
+.register-button{
+    height:.75px; 
+    background-Color:#D3D3D3; 
+    margin:1rem 1rem 1rem;
+}

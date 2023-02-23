@@ -1,0 +1,63 @@
+.editable-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  .editable-table thead tr th {
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+  }
+  
+  .editable-table tbody tr td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .edit-button,
+  .save-button,
+  .cancel-button {
+    background-color: #ddd;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+  
+  .edit-button:hover,
+  .save-button:hover,
+  .cancel-button:hover {
+    background-color: #aaa;
+  }
+  
+  .save-button,
+  .cancel-button {
+    margin-left: 10px;
+  }
+  .form-label{
+    display: flex;
+  }
+  
+  .Participants-MainForm{
+    max-Width: 1000px; 
+    padding: 20px 5px; 
+    margin: 0 auto;
+  }
+  .Participants-mainDiv{
+    overflow: scroll;
+  }
+
+  .Participants-mainWrapper{
+    min-Width:700px;
+  }
+
+  .Participants-table{
+    width: 100%;
+  }
+
+  .ParticipantsForm-Card{
+    max-Width: 200px; 
+    padding: 20px 5px; 
+    margin: 0 auto;
+  }
