@@ -40,7 +40,7 @@ export default function Landing() {
               </CardContent>
               <Grid xs={12} sm={12} item sx={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                 <Button sx={ {m:'1rem 1rem .8rem', backgroundColor:'#59D436', alignContent:'center'}} size='small' variant="contained" onClick={() => loginRouteChange()}>Iniciar sesion</Button>
-                <h6 className='login-forgotPassword'>¿Has olvidado la contraseña?</h6>
+                <h6 className='login-forgotPassword'>¿Has olvidado la contraseña??</h6>
                 <div className='register-button'></div>
                 <Button sx={ {m:'1rem', border:'2px solid #59D436', fontWeight:'600', color:'black'}}size='small' onClick={() => singpURouteChange()}> Registrar Tanda!</Button>
 
