@@ -47,11 +47,11 @@ theme.TextField = {
 const spanish = true
 
 export default function AddParticipants() {
-  const [data, setData] = useState([{ firstName: 'John', lastName: 'Doe', email: 'john.doe@example.com', phone: '555-555-1212' }, { firstName: 'Jane', lastName: 'Doe', email: 'jane.doe@example.com', phone: '555-555-1213' },]);
+  const [data, setData] = useState([{ firstName: 'John', lastName: 'Doe', payDate: '3/1/2023', phone: '555-555-1212' }, { firstName: 'Jane', lastName: 'Doe', payDate: '3/1/2023', phone: '555-555-1213' },]);
   const [editingIndex, setEditingIndex] = useState(-1);
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
+  const [payDate, setPayDate] = useState('');
   const [phone, setPhone] = useState('');
 
   const handleDelete = (index) => {
@@ -59,26 +59,26 @@ export default function AddParticipants() {
   };
 
   const handleAdd = () => {
-    setData([...data, { firstName, lastName, email, phone }]);
+    setData([...data, { firstName, lastName, payDate, phone }]);
     setFirstName('');
     setLastName('');
-    setEmail('');
+    setPayDate('');
     setPhone('');
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     if (editingIndex === -1) {
-      setData([...data, { firstName, lastName, email, phone }]);
+      setData([...data, { firstName, lastName, payDate, phone }]);
     } else {
       const newData = [...data];
-      newData[editingIndex] = { firstName, lastName, email, phone };
+      newData[editingIndex] = { firstName, lastName, payDate, phone };
       setData(newData);
       setEditingIndex(-1);
     }
     setFirstName('');
     setLastName('');
-    setEmail('');
+    setPayDate('');
     setPhone('');
   };
 
@@ -86,7 +86,7 @@ export default function AddParticipants() {
     <tr key={index}>
       <td>{row.firstName}</td>
       <td>{row.lastName}</td>
-      <td>{row.email}</td>
+      <td>{row.payDate}</td>
       <td>{row.phone}</td>
       <td>
         <Button variant="danger" onClick={() => handleDelete(index)}>
@@ -107,7 +107,7 @@ export default function AddParticipants() {
       <tr>{`Participant Number ${index + 1}`}</tr>
       <tr>{row.firstName}</tr>
       <tr>{row.lastName}</tr>
-      <tr>{row.email}</tr>
+      <tr>{row.payDate}</tr>
       <tr>{row.phone}</tr>
       
     </tr>
@@ -170,7 +170,7 @@ export default function AddParticipants() {
                               <tr>
                                 <th>Primer Nomber</th>
                                 <th>Apellido</th>
-                                <th>Email</th>
+                                <th>Fecha de pago</th>
                                 <th>Numero de Teléfono</th>
 
                               </tr>
