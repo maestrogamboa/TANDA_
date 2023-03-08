@@ -54,9 +54,6 @@ export default function Signup() {
                   <TextField placeholder="Enter last name" label="Last Name" variant="outlined" fullWidth required />
                 </Grid>
                 <Grid item xs={12}>
-                  <TextField type="email" placeholder="Enter email" label="Email" variant="outlined" fullWidth required />
-                </Grid>
-                <Grid item xs={12}>
                   <TextField type="phone" placeholder="Enter phone number" label="Phone Number" variant="outlined" fullWidth required />
                 </Grid>
                 <Grid item xs={12} sx={{display:'flex', justifyContent:'center',  mt:'1rem'}}>
