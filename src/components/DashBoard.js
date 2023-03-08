@@ -9,7 +9,14 @@ import Button from '@mui/material/Button';
 import "./css/dashboard.css"
 
 
-function DashBoard() {
+function DashBoard({webAuthLogOut}) {
+
+  function appLogOut(){
+    webAuthLogOut.logout({
+      returnTo: 'http://localhost:3000/',
+      clientID: '5LH20bZtKkUIsBroruWBwt9uxPTahNCi'
+    });
+  }
 
   let navigate = useNavigate()
 
@@ -23,7 +30,7 @@ function DashBoard() {
           <Typography  sx={{ mt: '2rem', letterSpacing:'0.2rem', fontSize:'1.5rem', fontWeight:'600'}} gutterBottom variant="h4" align="center"  color={'#59D436'}>
        TANDA
        </Typography>
-       <Button sx={{ maxWidth:'400px', border:'1px solid #59D436', backgroundColor:'white', color:'#59D436', alignContent:'center', mt:'2rem'}} type="submit" > Cerrar Session
+       <Button sx={{ maxWidth:'400px', border:'1px solid #59D436', backgroundColor:'white', color:'#59D436', alignContent:'center', mt:'2rem'}} onClick={() => appLogOut()} > Cerrar Session
 </Button>
      
           </div>
