@@ -14,7 +14,7 @@ function DashBoard({webAuthLogOut}) {
   function appLogOut(){
     webAuthLogOut.logout({
       returnTo: 'http://localhost:3000/',
-      clientID: '5LH20bZtKkUIsBroruWBwt9uxPTahNCi'
+      clientID: process.env.REACT_APP_CLIENT_ID
     });
   }
 

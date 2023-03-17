@@ -195,20 +195,18 @@ export default function AddParticipants() {
             <form>
               <Grid container spacing={2}>
                 <Grid xs={12} sm={12} item>
-                  <TextField  label="Primer Nombre" variant="outlined" fullWidth required />
+                  <TextField value={firstName} onChange={(e) => setFirstName(e.target.value)} label="Primer Nombre" variant="outlined" fullWidth required />
                 </Grid>
                 <Grid xs={12} sm={12} item>
-                  <TextField  label="Apellido" variant="outlined" fullWidth required />
+                  <TextField value={lastName} onChange={(e) => setLastName(e.target.value)} label="Apellido" variant="outlined" fullWidth required />
                 </Grid>
+                
                 <Grid item xs={12} sm={12}>
-                  <TextField type="email"  label="Email" variant="outlined" fullWidth required />
-                </Grid>
-                <Grid item xs={12} sm={12}>
-                  <TextField type="phone"  label="Numero de Teléfono" variant="outlined" fullWidth required />
+                  <TextField type="phone"  value={phone} onChange={(e) => setPhone(e.target.value)} label="Numero de Teléfono" variant="outlined" fullWidth required />
                 </Grid>
                 <Grid item xs={12} sx={{display:'flex', justifyContent:'center',  mt:'1rem'}}>
     
-                  <Button sx={{ maxWidth:'400px', mb:'1rem', border:'2px solid #59D436', fontWeight:'600', color:'black'}}type="submit"  fullWidth>añadir</Button>
+                  <Button sx={{ maxWidth:'400px', mb:'1rem', border:'2px solid #59D436', fontWeight:'600', color:'black'}} onClick={() => handleAdd()} fullWidth>añadir</Button>
                 </Grid>
 
               </Grid>

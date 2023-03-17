@@ -4,7 +4,7 @@ import './components/css/tellus.css';
 import Landing from "./components/Landing";
 import TellUsMore from "./components/TellUsMore";
 import Signup from "./components/Signup";
-import AddParticipantsCopy from "./components/AddParticipantsCopy";
+import AddParticipants from "./components/AddParticipants";
 import DashBoard from "./components/DashBoard";
 import auth0 from 'auth0-js';
 
@@ -30,7 +30,7 @@ export default function app() {
           <Route path="" element={<Landing webAuthLogIn={webAuthLogIn}/>}/>
           <Route path="/tellusmore" element={<TellUsMore/>}/>
           <Route path="/signup" element={<Signup/>}/>
-          <Route path="/addparticipants" element={<AddParticipantsCopy/>}/>
+          <Route path="/addparticipants" element={<AddParticipants/>}/>
           <Route path="/dashboard" element={<DashBoard webAuthLogOut={webAuthLogOut}/>}/>
         </Routes>
       </BrowserRouter>
