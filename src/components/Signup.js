@@ -48,13 +48,13 @@ export default function Signup() {
             <form>
               <Grid container spacing={7}>
                 <Grid xs={12} sm={6} item>
-                  <TextField placeholder="Enter first name" label="First Name" variant="outlined" fullWidth required />
+                  <TextField placeholder="Escribir Primer Nombre" label="Primer Nombre" variant="outlined" fullWidth required />
                 </Grid>
                 <Grid xs={12} sm={6} item>
-                  <TextField placeholder="Enter last name" label="Last Name" variant="outlined" fullWidth required />
+                  <TextField placeholder="Escribir Apellido" label="Apellido" variant="outlined" fullWidth required />
                 </Grid>
                 <Grid item xs={12}>
-                  <TextField type="phone" placeholder="Enter phone number" label="Phone Number" variant="outlined" fullWidth required />
+                  <TextField type="phone" placeholder="Escribir Numero Movil" label="Numero Movil" variant="outlined" fullWidth required />
                 </Grid>
                 <Grid item xs={12} sx={{display:'flex', justifyContent:'center',  mt:'1rem'}}>
                   <Button sx={{ maxWidth:'400px', backgroundColor:'#59D436',  m:'1rem'}}type="submit" variant="contained" color="primary" fullWidth onClick={() => adminRouteChange()}>Registrate como Organizador</Button>
